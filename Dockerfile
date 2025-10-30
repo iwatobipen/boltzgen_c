@@ -27,6 +27,6 @@ RUN touch setup.cfg && \
     conda clean --all -y && \ 
     pip cache purge && \
     pip install -e .[cuda] && \
-    echo "conda activate boltz" >> ~/.bashrc
+    echo "conda activate boltzgen" >> ~/.bashrc
 
 ENV PATH /opt/Miniforge/envs/boltz/bin:$PATH
