@@ -18,7 +18,7 @@ RUN wget https://github.com/conda-forge/miniforge/releases/download/25.3.1-0/Min
     
 ENV PATH /opt/Miniforge/bin:$PATH
 WORKDIR /opt/boltzgen
-RUN conda create -n boltzgen python=3.21 -y && \
+RUN conda create -n boltzgen python=3.12 -y && \
     conda init
     
 SHELL ["conda", "run", "-n", "boltzgen", "/bin/bash", "-c"]
